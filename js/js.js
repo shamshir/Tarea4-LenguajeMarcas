@@ -28,7 +28,7 @@ $(document).ready(function(){
 /* -------- Funciones Imágenes y lista de Enlaces -------- */
 $(document).on("click", "#listaNoticias li", function(evento){
 	var divId = '#noti' + ($(evento.target).attr("id"));
-	$('html, body').animate({ scrollTop: $(divId).offset().top - 55 }, 'slow');
+	$('html, body').animate({ scrollTop: $(divId).offset().top - 65 }, 'slow');
 	$('.navbar-collapse').collapse('hide');
 });
 
