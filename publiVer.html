@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Publicidad Versión Vertical</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Carrusel de tres anuncios para la página de noticias vertical"/>
+		<meta name="author" content="Javier Vañó">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script>
+			var contador = 1;
+			var img = [];
+			img[0] = "img/publiVer1.jpg";
+			img[1] = "img/publiVer2.jpg";
+			img[2] = "img/publiVer3.jpg";
+			
+			$(document).ready(function(){
+				var temporizador = setInterval(alternarImagen, 4000);
+			});
+			
+			function alternarImagen() {
+				if (contador > 2) {
+					contador = 0;
+				}
+				$("img").fadeOut(0);
+				$("img").attr("src", img[contador]);
+				$("img").fadeIn(1000);
+				contador++;
+			}
+		</script>
+	</head>
+	<body style="background-color:black;">
+		<img src="img/publiVer1.jpg" alt="publicidad vertical">
+	</body>
+</html>
+

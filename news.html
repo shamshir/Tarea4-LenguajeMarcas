@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+		<title>Nasa News - El espacio, misiones, investigación, tecnología</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Toda la actualidad acerca de la exploración del espacio, las misiones de exploración, las investigaciones extraterráqueas y la tecnología espacial."/>
+		<meta name="author" content="Javier Vañó">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Open Graph -->
+		<meta property="og:site_name" content="Nasa News">
+		<meta property="og:url" content="!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!">
+		<meta property="og:title" content="Nasa News - El espacio, misiones, investigación, tecnología">
+		<meta property="og:image" content="!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!">
+		<meta property="og:description" content="Toda la actualidad acerca de la exploración del espacio, las misiones de exploración, las investigaciones extraterráqueas y la tecnología espacial.">
+		<!-- Css y Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trade+Winds">
+		<link rel="stylesheet" href="css/css.css">
+		<!-- Javascript y Jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/js.js"></script>
+		<!-- Rss -->
+		<link rel="alternate" type="application/rss+xml" title="Nasa News - El espacio, misiones, investigación, tecnología" href="rss/rss.xml">
+	</head>
+	<body>
+		<!-- Cabecera -->
+		<div id="cabecera" class="jumbotron text-center">
+			<img id="logo" src="img/logoNasaNews.png" alt="Logo Principal">
+		</div>
+		<!-- Barra de Navegación -->
+		<nav id="barraNav" class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button id="collapseBot" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#barraCompacta">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a id="enlacePrincipal" class="navbar-brand texto15Em" href="news.html">Nasa News</a>
+				</div>
+				<div class="collapse navbar-collapse" id="barraCompacta">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a class="dropdown-toggle texto12Em" data-toggle="dropdown" href="#">Lista de Noticias<span class="caret"></span></a>
+							<ul id="listaNoticias" class="dropdown-menu">
+								<li id="cia1">15/05/18 - La NASA incluye un helicóptero en la misión Mars 2020 a Marte</li>
+								<li id="cia2">14/05/18 - Un satélite de la NASA descubre un nuevo proceso magnético</li>
+								<li id="cia3">13/05/18 - Se cumplen 45 años del lanzamiento del Skylab</li>
+								<li id="cia4">12/05/18 - Nuevas vistas de Júpiter muestran remolinos de nubes en movimiento</li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-left" action="/action_page.php">
+						<div class="input-group">
+							<input type="text" class="form-control texto12Em" placeholder="Buscar" autocomplete="off">
+							<div class="input-group-btn">
+								<button class="btn btn-default" type="submit">
+								<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<button id="scrollBot" class="btn btn-danger navbar-btn navbar-right texto12Em">Activar AutoScroll</button>
+				</div>
+			</div>
+		</nav>
+		<!-- Contenedor Principal -->
+		<div class="container-fluid principal" id="principal">
+			<div id="publiVer" class="center-block">
+				<div id="subPubliVer" class="embed-responsive embed-responsive-4by3">
+					<iframe class="embed-responsive-item" src="publiVer.html"></iframe>
+				</div>
+			</div>
+			<div id="publiHor">
+				<div id="subPubliHor" class="embed-responsive embed-responsive-4by3">
+					<iframe class="embed-responsive-item" src="publiHor.html"></iframe>
+				</div>
+			</div>
+			<div class="container-fluid" id="noticias">
+				<div class="row">
+					<div id="noticia1" class="col-sm-12 col-md-6 noticiaEspaciada">
+						<h2 class="text-justify"><a class="enlaceNoticia" href="news1.html">La NASA incluye un helicóptero en la misión Mars 2020 a Marte</a></h2>
+						<p class="text-right"><em>15/05/18</em></p>
+						<img id="Big1" class="img-responsive center-block anchoMaximo" src="img/imgMid1.jpg" alt="Imagen Noticia 1">
+						<br>
+						<p class="text-justify">La NASA enviará un pequeño helicóptero autónomo a Marte con la misión rover Mars 2020, para demostrar la viabilidad y el potencial de los vehículos más pesados que el aire en el planeta rojo. "La NASA tiene una orgullosa historia de primicias", dijo el administrador de la NASA Jim Bridenstine.</p>
+					</div>
+					<div id="noticia2" class="col-sm-12 col-md-6 noticiaEspaciada">
+						<h2 class="text-justify"><a class="enlaceNoticia" href="news2.html">Un satélite de la NASA descubre un nuevo proceso magnético</a></h2>
+						<p class="text-right"><em>14/05/18</em></p>
+						<img id="Big2" class="img-responsive center-block anchoMaximo" src="img/imgMid2.jpg" alt="Imagen Noticia 2">
+						<br>
+						<p class="text-justify">La misión MMS de la NASA ha descubierto un nuevo evento magnético en nuestro entorno con una técnica innovadora para extraer información adicional de los datos. La reconexión magnética es uno de los procesos más importantes en el espacio, lleno de partículas cargadas conocidas como plasma, alrededor de la Tierra.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div id="noticia3" class="col-sm-12 col-md-6 noticiaEspaciada">
+						<h2 class="text-justify"><a class="enlaceNoticia" href="#">Se cumplen 45 años del lanzamiento del Skylab</a></h2>
+						<p class="text-right"><em>13/05/18</em></p>
+						<img id="Big3" class="img-responsive center-block anchoMaximo" src="img/imgMid3.jpg" alt="Imagen Noticia 3">
+						<br>
+						<p class="text-justify">Este 14 de mayo se cumplen 45 años del lanzamiento de Skylab, la primera estación espacial estadounidense. Con un peso de 75 toneladas, fue necesario un cohete Saturno V para ponerla en órbita. La estación sufrió daños graves durante el lanzamiento, perdiendo el escudo solar y uno de sus paneles solares principales.</p>
+					</div>
+					<div id="noticia4" class="col-sm-12 col-md-6 noticiaEspaciada">
+						<h2 class="text-justify"><a class="enlaceNoticia" href="#">Nuevas vistas de Júpiter muestran remolinos de nubes en movimiento</a></h2>
+						<p class="text-right"><em>12/05/18</em></p>
+						<img id="Big4" class="img-responsive center-block anchoMaximo" src="img/imgMid4.jpg" alt="Imagen Noticia 4">
+						<br>
+						<p class="text-justify">Una animación de imágenes de la cámara Junocam de la NASA ha revelado movimientos sutiles dentro de la atmósfera de Júpiter. Al modelar el movimiento en las imágenes, el científico Gerald Eichstädt ha creado una animación que muestra la evolución de los remolinos en la atmósfera del planeta gigante.</p>
+					</div>
+				</div>
+			</div>
+			<div id="divLoadBot" class="text-center container-fluid">
+				<button id="loadBot" class="btn texto12Em">Cargar más Noticias</button>
+			</div>
+		</div>
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container-fluid">
+				<span class="text-muted texto12Em">Javier Vañó 2018</span>
+			</div>
+		</footer>
+		<!-- Pantalla de Carga -->
+		<div id="divIconoCarga">
+			<img id="iconoCarga" class="img-responsive" src="img/iconoCarga.gif" alt="Icono de carga">
+		</div>
+		<!-- Ventana Modal Imagen Big -->
+		<div id="modalWindow" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span class="glyphicon glyphicon-remove"></span>
+					</button>
+				</div>
+				<div class="modal-content center-block">
+					<img id="imgModal" class="img-responsive center-block" src="img/imgBig1.jpg" alt="Imagen ventana modal">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
