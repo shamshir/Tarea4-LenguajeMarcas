@@ -3,27 +3,27 @@
 
 <channel>
 	<title>Nasa News - El espacio, misiones, investigación, tecnología</title>
-	<link>https://www.w3schools.com</link>
+	<link>https://rawgit.com/shamshir/Tarea4-LenguajeMarcas/master/news.html</link>
 	<description>Toda la actualidad acerca de la exploración del espacio, las misiones de exploración, las investigaciones extraterráqueas y la tecnología espacial.</description>
 	<image>
 		<title>Nasa News - El espacio, misiones, investigación, tecnología</title>
-		<link>https://www.w3schools.com</link>
-		<url>https://www.w3schools.com/img.png</url>
+		<link>https://rawgit.com/shamshir/Tarea4-LenguajeMarcas/master/news.html</link>
+		<url>https://rawgit.com/shamshir/Tarea4-LenguajeMarcas/master/img/logoNasaNews.png</url>
 	</image>
 	<item>
 		<title>La NASA incluye un helicóptero en la misión Mars 2020 a Marte</title>
-		<link>https://www.w3schools.com</link>
+		<link>https://rawgit.com/shamshir/Tarea4-LenguajeMarcas/master/news1.html</link>
 		<description>
-			<![CDATA[<img src="https://www.w3schools.com/img.png" alt="Helicóptero en Mars 2020">]]>
+			<![CDATA[<img src="https://rawgit.com/shamshir/Tarea4-LenguajeMarcas/master/img/imgBig1.jpg" alt="Helicóptero en Mars 2020">]]>
 			La NASA enviará un pequeño helicóptero autónomo a Marte con la misión rover Mars 2020, para demostrar la viabilidad y el potencial de los vehículos más pesados que el aire en el planeta rojo. 'La NASA tiene una orgullosa historia de primicias', dijo el administrador de la NASA Jim Bridenstine.
 		</description>
 		<pubDate>Tue, 15 May 2018 08:00:00 GMT</pubDate>
 	</item>
 	<item>
 		<title>Un satélite de la NASA descubre un nuevo proceso magnético</title>
-		<link>https://www.w3schools.com</link>
+		<link>https://rawgit.com/shamshir/Tarea4-LenguajeMarcas/master/news2.html</link>
 		<description>
-			<![CDATA[<img src="https://www.w3schools.com/img.png" alt="Reconexión magnética en el espacio">]]>
+			<![CDATA[<img src="https://rawgit.com/shamshir/Tarea4-LenguajeMarcas/master/img/imgBig2.jpg" alt="Reconexión magnética en el espacio">]]>
 			La misión MMS de la NASA ha descubierto un nuevo evento magnético en nuestro entorno con una técnica innovadora para extraer información adicional de los datos. La reconexión magnética es uno de los procesos más importantes en el espacio, lleno de partículas cargadas conocidas como plasma, alrededor de la Tierra.
 		</description>
 		<pubDate>Mon, 14 May 2018 08:00:00 GMT</pubDate>
