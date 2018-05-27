@@ -41,6 +41,10 @@ h2, p{
 	color:white;
 	text-decoration:none;
 }
+.enlaceNoticia:visited{
+	color:#337ab7;
+	text-decoration:none;
+}
 .anchoMaximo{
 	width:100%;
 	cursor:pointer;
