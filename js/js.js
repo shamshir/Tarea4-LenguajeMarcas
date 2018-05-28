@@ -44,7 +44,7 @@ $(document).on("click", "img", function(evento){
 $(window).scroll(function(){
 	
 	if (autoScroll) {
-		if ($(window).scrollTop() + $(window).height() + 50 >= $(document).height()) {
+		if ($(window).scrollTop() + $(window).height() + 10 >= $(document).height()) {
 			load();
 		}
 	}
