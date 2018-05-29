@@ -47,14 +47,6 @@ h2, p{
 }
 footer{
 	padding:15px;
-}
-h2{
-	font-size:2.5em;
-}
-p{
-	font-size:1.4em;
-}
-footer{
 	background-color: #222;
 }
 .modal-header{
@@ -124,6 +116,12 @@ footer{
 	}
 	#publiVer{
 		display:none;
+	}
+	h2{
+		font-size:2.5em;
+	}
+	p{
+		font-size:1.4em;
 	}
 	.sticky{
 		position:fixed;
@@ -216,6 +214,12 @@ footer{
 	}
 	.noticiaEspaciada{
 		padding-bottom:60px;
+	}
+	h2{
+		font-size:2.2em;
+	}
+	p{
+		font-size:1.2em;
 	}
 	.sticky{
 		position:fixed;
