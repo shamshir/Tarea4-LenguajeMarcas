@@ -45,7 +45,9 @@ $(window).scroll(function(){
 	
 	if (autoScroll) {
 		if ($(window).scrollTop() + $(window).height() + 30 >= $(document).height()) {
+			autoScroll = false;//---------------------------------------------------------------
 			load();
+			autoScroll = true;//----------------------------------------------------------------
 		}
 	}
 	
