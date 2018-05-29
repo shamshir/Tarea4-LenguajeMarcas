@@ -2,6 +2,7 @@
 var numNoticia = 5;
 var numJson = 1;
 var autoScroll = false;
+var controlScroll = false;
 var offset;
 
 /* -------- Window Onload -------- */
@@ -45,9 +46,7 @@ $(window).scroll(function(){
 	
 	if (autoScroll) {
 		if ($(window).scrollTop() + $(window).height() + 30 >= $(document).height()) {
-			autoScroll = false;//---------------------------------------------------------------
 			load();
-			autoScroll = true;//----------------------------------------------------------------
 		}
 	}
 	
@@ -70,9 +69,12 @@ function load() {
 	
 	if (numJson < 7) {
 		$("#divIconoCarga").show();
+		controlScroll = autoScroll;
+		autoScroll = false;
 		$.getJSON("json/json" + numJson + ".json", function (jsonObject) {
 			newRow(jsonObject);
 			$("#divIconoCarga").hide();
+			autoScroll = controlScroll;
 		});
 		numJson++;
 	} else {
