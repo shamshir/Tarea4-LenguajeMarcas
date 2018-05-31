@@ -5,6 +5,7 @@
 ## Proyecto
 El presente proyecto consiste en la creación de una página de noticias que sea capaz de cargar más noticias de las que ya están precargadas en el *HTML*. Esto se debe realizar mediante la lectura de varios archivos *.json* y a través de dos mecanismos distintos: un botón de "Cargar más" y un evento de scroll al llegar al final de la página.
 ## Funcionalidad
+Esta página de noticias cumple con las espeficaciones del proyecto, precargando 4 noticias en el *HTML* y cargando hasta 12 noticias más (6 cargas de 2 noticias) mediante un botón de carga o el auto-scroll (si está activado).
 Además de las funciones exigidas por el proyecto, la presente página de noticias cuenta con varios mecanismos que añaden dos funcionalidades extra de navegación.
 ### Ampliación de Imágenes
 En la página principal, el usuario puede hacer click en cualquiera de las imágenes de las noticias para ver la imagen más grande, en el centro de la pantalla.
