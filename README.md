@@ -41,14 +41,23 @@ En cuanto al diseño y adaptabilidad general, compartido por las dos versiones d
   - Cuadro de búsqueda (no funcional)
   - Botón de activación/desactivación del auto-scroll
 - Contenedor principal en el que figuran todas las noticias, cada una con la siguiente información:
+  - Título
+  - Fecha de publicación
+  - Imagen de la noticia
+  - Breve descripción de la noticia
 - Botón de "Cargar más noticias"
 - Footer sencillo con el nombre del autor
-
 ### Versión Escritorio
 Características propias de la versión de escritorio:
 
+- Las noticias se muestran a razón de dos por fila
+- La publicidad horizontal (por la disposición de la pantalla) se muestra y la publicidad vertical se oculta
 ### Versión Móvil
 Características propias de la versión de móvil:
 
+- Las noticias se muestran individualmente, una debajo de otra
+- La publicidad vertical (por la disposición de la pantalla) se muestra y la publicidad horizontal se oculta
+- La lista de noticias desplegable tiene una altura máxima, que una vez excedida, genera su propio scroll
+- Los botones de la página tienen un padding y un tamaño mayor, para facilitar su utilización en un dispositvo móvil
 ### Extras de Adaptabilidad
 La presente página de noticias se ha construido teniendo en mente las dos versiones principales: versión de escritorio y versión móvil. No obstante, se han teniendo en cuenta algunos detalles de adaptabilidad en el punto medio de ambas versiones. Por ejemplo, se ha reducido el ancho del cuadro de búsqueda cuando nos acercamos a la anchura en la que la página cambia a la versión de móvil, para evitar que los elementos de la barra de navegación se toquen y la barra se haga el doble de alta para acomodarlos. También se ha tenido en cuenta la posición de las noticias en resoluciones de escritorio reducidas, de modo que cuando la pantalla se estrecha, las noticias pasan de verse dos por fila, a situarse una por fila, como en dispositivos móviles.
