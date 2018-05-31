@@ -29,9 +29,26 @@ En este apartado figuran las dos funciones que dependen del scroll de la página
 ### Funciones Carga
 Aquí se encuentran las funciones que gestionan la carga de nuevas noticias desde los archivos *.json*. La primera función, *load()* viene desencadenada por el scroll o por el botón de *Cargar más noticias* y carga dos noticias (una nueva row) con la ayuda de la función *newRow()*, que es la que se encarga de añadir los elementos necesarios al *HTML*.
 ## Publicidad
-La publicidad, tanto vertical como horizontal, de la página de noticias se obtiene de una página *HTML* externa y se presenta en un *iFrame* de las medidas exactas (300x600 y 320x100, respectivamente). En cada una de las páginas de publicidad, encontramos un código *Javascript* incrustado en el *head* de la página, desde el que se gestiona el intercambio constante de las imágenes de la publicidad. También podemos encontrar incrustado en el código algún elemento de estilo/*CSS* debido a que las páginas de publicidad simulan un contenido que será externo y, por tanto, no parte directa de nuestra página, donde la presentación (*CSS*) debe ir separada del contenido de la página (*HTML*).
-## Adaptabilidad
-La presente página de noticias se ha construido teniendo en mente las dos versiones principales: versión de escritorio y versión móvil. No obstante, se han teniendo en cuenta algunos detalles 
+La publicidad, tanto vertical como horizontal, de la página de noticias se obtiene de una página *HTML* externa y se presenta en un *iFrame* de las medidas exactas (300x600 y 320x100, respectivamente). En cada una de las páginas de publicidad, encontramos un código *Javascript* incrustado en el *head* de la página, desde el que se gestiona el intercambio constante de las imágenes de la publicidad. También podemos encontrar incrustado en el código algún elemento de estilo/*CSS* debido a que las páginas de publicidad simulan un contenido que será externo y, por tanto, no forma parte de nuestra página, donde la presentación (*CSS*) debe ir separada del contenido de la página (*HTML*).
+## Diseño y Adaptabilidad
+El diseño de la página gira en torno al color negro, emulando el espacio, y al color blanco, utilizado como contrapinto para la mayoría de textos e información de la página. Se ha usado el color azul para los títulos/links de las noticias, imitando el color del logo de la Nasa, utilizado como cabecera.
+En cuanto al diseño y adaptabilidad general, compartido por las dos versiones de este proyecto, podemos destacar las siguientes características:
+
+- Logo de "Nasa News" en la cabecera de la página
+- Barra de navegación que queda fijada en la parte superior de la página al hacer scroll, que contiene:
+  - Nombre de la página que enlaza a la página principal
+  - Lista desplegable de noticias que permite situarnos en aquella que seleccionemos
+  - Cuadro de búsqueda (no funcional)
+  - Botón de activación/desactivación del auto-scroll
+- Contenedor principal en el que figuran todas las noticias, cada una con la siguiente información:
+- Botón de "Cargar más noticias"
+- Footer sencillo con el nombre del autor
+
 ### Versión Escritorio
+Características propias de la versión de escritorio:
+
 ### Versión Móvil
-## Diseño
+Características propias de la versión de móvil:
+
+### Extras de Adaptabilidad
+La presente página de noticias se ha construido teniendo en mente las dos versiones principales: versión de escritorio y versión móvil. No obstante, se han teniendo en cuenta algunos detalles de adaptabilidad en el punto medio de ambas versiones. Por ejemplo, se ha reducido el ancho del cuadro de búsqueda cuando nos acercamos a la anchura en la que la página cambia a la versión de móvil, para evitar que los elementos de la barra de navegación se toquen y la barra se haga el doble de alta para acomodarlos. También se ha tenido en cuenta la posición de las noticias en resoluciones de escritorio reducidas, de modo que cuando la pantalla se estrecha, las noticias pasan de verse dos por fila, a situarse una por fila, como en dispositivos móviles.
