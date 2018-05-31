@@ -29,9 +29,9 @@ Este apartado contiene los eventos que empezarán a funcionar a partir del momen
 #### Eventos Botones
 En esta parte están situados los eventos *onclick* de los dos botones de la página: el botón de activar/desactivar el auto-scroll y el botón de cargar más noticias.
 #### Eventos Imágenes y lista de Enlaces
-Aquí se recogen las funciones que gestionan las dos funciones extra de este proyecto: la visualización ampliada de imágenes y la lista de noticias. Ambas funciones se aplican a elementos genéricos (de tipo *li* para una función y de tipo *img* para la otra), para garantizar su funcionamiento a pesar de que se trate de elementos que no figuren en la página desde la carga inicial de la misma.
+Aquí se recogen los eventos que posibilitan las dos características extra de este proyecto: la visualización ampliada de imágenes y la lista de noticias. Ambas funciones se aplican a elementos genéricos (de tipo *li* para una función y de tipo *img* para la otra), para garantizar su funcionamiento a pesar de que se trate de elementos que no figuren en la página desde la carga inicial de la misma.
 #### Eventos Scroll
-En este apartado figuran las dos funciones que dependen del scroll de la página. Por una parte tenemos la función que desencadena la carga de más noticias (siempre que el auto-scroll esté activado) y, por otra parte, tenemos la función que gestiona la fijación de la barra de navegación si la situación lo requiere. Esto último se podría haber implementado sin *Javascript*, usando características 
+En este apartado figuran los dos eventos que dependen del scroll de la página. Por una parte tenemos la función que desencadena la carga de más noticias (siempre que el auto-scroll esté activado) y, por otra parte, tenemos la función que gestiona la fijación de la barra de navegación si la situación lo requiere. Esto último se podría haber implementado sin *Javascript*, usando características 
 ### Funciones Carga
 Aquí se encuentran las funciones que gestionan la carga de nuevas noticias desde los archivos *.json*. La primera función, *load()* viene desencadenada por el scroll o por el botón de *Cargar más noticias* y carga dos noticias (una nueva fila) con la ayuda de la función *newRow()*, que es la que se encarga de añadir los elementos necesarios al *HTML*.
 ## Publicidad
