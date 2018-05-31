@@ -10,6 +10,7 @@ $(document).ready(function(){
 	
 	offset = $("#barraNav").offset();
 	
+	/* ---- Eventos Botones ---- */
 	$("#scrollBot").click(function(){
 		if (autoScroll) {
 			autoScroll = false;
@@ -24,43 +25,43 @@ $(document).ready(function(){
 		load();
 	});
 	
-});
+	/* ---- Eventos Imágenes y lista de Enlaces ---- */
+	$(document).on("click", "#listaNoticias li", function(evento){
+		var divId = '#noti' + ($(evento.target).attr("id"));
+		$('html, body').animate({ scrollTop: $(divId).offset().top - 65 }, 'slow');
+		$('.navbar-collapse').collapse('hide');
+	});
 
-/* -------- Funciones Imágenes y lista de Enlaces -------- */
-$(document).on("click", "#listaNoticias li", function(evento){
-	var divId = '#noti' + ($(evento.target).attr("id"));
-	$('html, body').animate({ scrollTop: $(divId).offset().top - 65 }, 'slow');
-	$('.navbar-collapse').collapse('hide');
-});
-
-$(document).on("click", "img", function(evento){
-	if (($(evento.target).attr("id")) != "imgModal" && ($(evento.target).attr("id")) != "logo"){
-		var imgSource = 'img/img' + ($(evento.target).attr("id")) +'.jpg';
-		$("#modalWindow img").attr("src",imgSource);
-		$("#modalWindow").modal("show");
-	}
-});
-
-/* -------- Funciones Scroll -------- */
-$(window).scroll(function(){
-	
-	if (autoScroll) {
-		if ($(window).scrollTop() + $(window).height() + 100 >= $(document).height()) {
-			load();
+	$(document).on("click", "img", function(evento){
+		if (($(evento.target).attr("id")) != "imgModal" && ($(evento.target).attr("id")) != "logo"){
+			var imgSource = 'img/img' + ($(evento.target).attr("id")) +'.jpg';
+			$("#modalWindow img").attr("src",imgSource);
+			$("#modalWindow").modal("show");
 		}
-	}
-	
-});
+	});
 
-$(window).scroll(function(){
-	
-	if (window.pageYOffset >= offset.top) {
-		$("#barraNav").addClass("sticky");
-		$("#principal").css("padding-top","70px");
-	} else {
-		$("#barraNav").removeClass("sticky");
-		$("#principal").css("padding-top","0px");
-	}
+	/* ---- Eventos Scroll ---- */
+	$(window).scroll(function(){
+		
+		if (autoScroll) {
+			if ($(window).scrollTop() + $(window).height() + 100 >= $(document).height()) {
+				load();
+			}
+		}
+		
+	});
+
+	$(window).scroll(function(){
+		
+		if (window.pageYOffset >= offset.top) {
+			$("#barraNav").addClass("sticky");
+			$("#principal").css("padding-top","70px");
+		} else {
+			$("#barraNav").removeClass("sticky");
+			$("#principal").css("padding-top","0px");
+		}
+		
+	});
 	
 });
 
