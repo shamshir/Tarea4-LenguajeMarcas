@@ -2,6 +2,9 @@
 
 [Visualizar Proyecto en Rawgit](https://rawgit.com/shamshir/Tarea4-LenguajeMarcas/master/news.html)
 
+## Cambios después de revisión!
+- Eventos recolocados en *window.onload*
+- Pequeños cambios en el Readme como consecuencia del punto anterior
 ## Proyecto
 El presente proyecto consiste en la creación de una página de noticias que sea capaz de cargar más noticias de las que ya están precargadas en el *HTML*. Esto se debe realizar mediante la lectura de varios archivos *.json* y a través de dos mecanismos distintos: un botón de "Cargar más" y un evento de scroll al llegar al final de la página.
 ## Funcionalidad
@@ -22,10 +25,12 @@ El código Javascript/JQuery se encuentra organizado en las siguientes secciones
 ### Variables Globales
 Este apartado recoge la declaración de aquellas variables que se vayan a utilizar a lo largo de todo el código y en los diferentes métodos que lo componen. Figuran, por ejemplo, los contadores para los archivos *.json* y las noticias, así como la variable *boolean* que gestiona el auto-scroll.
 ### Window Onload
-Este apartado contiene los eventos que empezarán a funcionar a partir del momento en el que se haya cargado la página, como son el funcionamiento de los dos botones principales de la misma: el botón de activar/desactivar el auto-scroll y el botón de cargar más noticias.
-### Funciones Imágenes y lista de Enlaces
+Este apartado contiene los eventos que empezarán a funcionar a partir del momento en el que se haya cargado la página. En él podemos distinguir los siguientes tres sub-apartados:
+#### Eventos Botones
+En esta parte están situados los eventos *onclick* de los dos botones de la página: el botón de activar/desactivar el auto-scroll y el botón de cargar más noticias.
+#### Eventos Imágenes y lista de Enlaces
 Aquí se recogen las funciones que gestionan las dos funciones extra de este proyecto: la visualización ampliada de imágenes y la lista de noticias. Ambas funciones se aplican a elementos genéricos (de tipo *li* para una función y de tipo *img* para la otra), para garantizar su funcionamiento a pesar de que se trate de elementos que no figuren en la página desde la carga inicial de la misma.
-### Funciones Scroll
+#### Eventos Scroll
 En este apartado figuran las dos funciones que dependen del scroll de la página. Por una parte tenemos la función que desencadena la carga de más noticias (siempre que el auto-scroll esté activado) y, por otra parte, tenemos la función que gestiona la fijación de la barra de navegación si la situación lo requiere. Esto último se podría haber implementado sin *Javascript*, usando características 
 ### Funciones Carga
 Aquí se encuentran las funciones que gestionan la carga de nuevas noticias desde los archivos *.json*. La primera función, *load()* viene desencadenada por el scroll o por el botón de *Cargar más noticias* y carga dos noticias (una nueva fila) con la ayuda de la función *newRow()*, que es la que se encarga de añadir los elementos necesarios al *HTML*.
